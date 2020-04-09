@@ -8,10 +8,17 @@
 
 
 <button type="button" onclick="showMessage();">Click Me!</button>
+name:<p id="name"></p>
+pass:<p id="pass"></p>
 <script>
     function showMessage() {
 
-        document.write('Thục Nhi xinh đẹp');
+        let name = prompt("nhập tên");
+        let pass = prompt("nhập pass");
+        if (name == "Phuc"&&pass == "123"){
+           document.getElementById("name").innerText = name;
+           document.getElementById("pass").innerText = pass;
+        }
 
     }
 </script>
