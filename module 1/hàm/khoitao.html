@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "hello.";
+        } else {
+            result = "sorry.";
+        }
+        return result;
+    }
+    let confirmAnswer = confirm("bạn có tốt không?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+</script>
+</body>
+</html>

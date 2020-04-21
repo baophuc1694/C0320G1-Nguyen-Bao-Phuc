@@ -6,12 +6,15 @@
 </head>
 <body>
 <script>
-    for(let i=1;i<=5;i++) {
-        for(let j=1;j<=i;j++) {
-            document.write(" N ");
-        }
-        document.write("<br/>");
+    var temp = a;
+    a = b;
+    b = temp;
     }
+
+    var a = 5;
+    var b = 10;
+    swap(a, b);
+    document.write("a = " + a + ", b = " + b);
 </script>
 </body>
 </html>
